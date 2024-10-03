@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Messages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Greeting Messages for Every Occasion</h1>
+        <label for="occasion">Select Occasion:</label>
+        <select id="occasion">
+            <option value="">--Select an Occasion--</option>
+            <option value="birthday">Birthday</option>
+            <option value="new_year">New Year</option>
+            <option value="thanksgiving">Thanksgiving</option>
+            <option value="valentines">Valentine's Day</option>
+            <option value="christmas">Christmas</option>
+        </select>
+    
+        <!-- Text input for company or personal name -->
+        <label for="name">Enter your name or company name:</label>
+        <input type="text" id="name" placeholder="Your name or company">
+    
+        <button onclick="getGreetings()">Get Greetings</button>
+    
+        <div id="greetings" class="greeting-list"></div>
+    </div>    
+
+    <script src="script.js"></script>
+</body>
+</html>
